@@ -14,20 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="AHH-mn-4VL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BA-YW-di9">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="rUB-5Z-IXd" kind="show" id="ge9-ZE-gdb"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="4BA-YW-di9" firstAttribute="centerY" secondItem="AHH-mn-4VL" secondAttribute="centerY" id="h7l-ig-wTV"/>
-                            <constraint firstItem="4BA-YW-di9" firstAttribute="centerX" secondItem="AHH-mn-4VL" secondAttribute="centerX" id="vj5-YS-DSi"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0w6-Lb-8Nw"/>
                     </view>
                     <navigationItem key="navigationItem" title="yellow" id="qnO-P6-4qi"/>
@@ -46,16 +33,9 @@
                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="H9e-ut-FRe"/>
                     </view>
-                    <navigationItem key="navigationItem" title="green" id="ow8-bU-uSN">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="Vli-zd-Wej">
-                            <connections>
-                                <segue destination="3Xn-z3-mHX" kind="unwind" unwindAction="unwindtoRedWithUnwindSegue:" id="23d-sA-pvc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="green" id="ow8-bU-uSN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8N9-bJ-Dvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="3Xn-z3-mHX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2566.666666666667" y="121.875"/>
         </scene>
@@ -66,32 +46,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0x-IO-cae">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="ByM-Y9-Qw8" kind="show" id="4dj-vf-olh"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-SV-8R2">
-                                <rect key="frame" x="159" y="391" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="h0x-IO-cae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y8U-og-5Tn"/>
-                            <constraint firstItem="h0x-IO-cae" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mA7-Nb-MCg"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="red" id="ZMB-oD-iXB"/>
-                    <connections>
-                        <outlet property="Textfield" destination="APJ-SV-8R2" id="MZV-Aa-OoY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

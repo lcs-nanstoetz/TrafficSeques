@@ -12,11 +12,25 @@
             <objects>
                 <viewController id="ByM-Y9-Qw8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AHH-mn-4VL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BA-YW-di9">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="rUB-5Z-IXd" kind="show" id="ge9-ZE-gdb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4BA-YW-di9" firstAttribute="centerY" secondItem="AHH-mn-4VL" secondAttribute="centerY" id="h7l-ig-wTV"/>
+                            <constraint firstItem="4BA-YW-di9" firstAttribute="centerX" secondItem="AHH-mn-4VL" secondAttribute="centerX" id="vj5-YS-DSi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0w6-Lb-8Nw"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qnO-P6-4qi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJj-3M-acj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,13 +41,28 @@
             <objects>
                 <viewController id="rUB-5Z-IXd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q80-ot-RAi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-Ki-TE7">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <state key="normal" title="Dismis"/>
+                                <connections>
+                                    <segue destination="3Xn-z3-mHX" kind="unwind" unwindAction="unwindtoRedWithUnwindSegue:" id="dwI-AV-q1G"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bnu-Ki-TE7" firstAttribute="centerY" secondItem="q80-ot-RAi" secondAttribute="centerY" id="RiI-wz-h79"/>
+                            <constraint firstItem="Bnu-Ki-TE7" firstAttribute="centerX" secondItem="q80-ot-RAi" secondAttribute="centerX" id="d1D-l9-vmK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="H9e-ut-FRe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ow8-bU-uSN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8N9-bJ-Dvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3Xn-z3-mHX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1657" y="122"/>
         </scene>
@@ -48,6 +77,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0x-IO-cae">
                                 <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ByM-Y9-Qw8" kind="show" id="4dj-vf-olh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

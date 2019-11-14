@@ -43,23 +43,16 @@
                     <view key="view" contentMode="scaleToFill" id="q80-ot-RAi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-Ki-TE7">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Dismis"/>
-                                <connections>
-                                    <segue destination="3Xn-z3-mHX" kind="unwind" unwindAction="unwindtoRedWithUnwindSegue:" id="dwI-AV-q1G"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Bnu-Ki-TE7" firstAttribute="centerY" secondItem="q80-ot-RAi" secondAttribute="centerY" id="RiI-wz-h79"/>
-                            <constraint firstItem="Bnu-Ki-TE7" firstAttribute="centerX" secondItem="q80-ot-RAi" secondAttribute="centerX" id="d1D-l9-vmK"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="H9e-ut-FRe"/>
                     </view>
-                    <navigationItem key="navigationItem" title="green" id="ow8-bU-uSN"/>
+                    <navigationItem key="navigationItem" title="green" id="ow8-bU-uSN">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Vli-zd-Wej">
+                            <connections>
+                                <segue destination="3Xn-z3-mHX" kind="unwind" unwindAction="unwindtoRedWithUnwindSegue:" id="23d-sA-pvc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8N9-bJ-Dvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3Xn-z3-mHX" userLabel="Exit" sceneMemberID="exit"/>
@@ -81,6 +74,12 @@
                                     <segue destination="ByM-Y9-Qw8" kind="show" id="4dj-vf-olh"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-SV-8R2">
+                                <rect key="frame" x="159" y="391" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -90,6 +89,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="red" id="ZMB-oD-iXB"/>
+                    <connections>
+                        <outlet property="Textfield" destination="APJ-SV-8R2" id="MZV-Aa-OoY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
